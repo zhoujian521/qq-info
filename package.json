@@ -1,47 +1,124 @@
 {
-  "name": "qq-info",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.4.1",
-    "@types/node": "^16.11.32",
-    "@types/react": "^18.0.8",
-    "@types/react-dom": "^18.0.3",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.6.4",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "sass-loader": "^12.6.0"
-  }
+    "name": "qq-info",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.1.1",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.4.1",
+        "@types/node": "^16.11.32",
+        "@types/react": "^18.0.8",
+        "@types/react-dom": "^18.0.3",
+        "classnames": "^2.3.1",
+        "eslint-plugin-react-hooks": "^4.5.0-next-bd0813766-20220420",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-scripts": "5.0.1",
+        "typescript": "^4.6.4",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "env": {
+            "es6": true,
+            "node": true,
+            "browser": true
+        },
+        "extends": [
+            "react-app",
+            "react-app/jest",
+            "plugin:@typescript-eslint/recommended"
+        ],
+        "parserOptions": {
+            "ecmaFeatures": {
+                "jsx": true
+            },
+            "ecmaVersion": 2018,
+            "sourceType": "module",
+            "project": "./tsconfig.json"
+        },
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint",
+            "react",
+            "react-hooks"
+        ],
+        "rules": {
+            "@typescript-eslint/explicit-function-return-type": "off",
+            "@typescript-eslint/no-explicit-any": "off",
+            "@typescript-eslint/no-inferrable-types": "off",
+            "@typescript-eslint/no-empty-function": "off",
+            "@typescript-eslint/no-use-before-define": "off",
+            "prefer-const": "off",
+            "@typescript-eslint/class-name-casing": "off",
+            "@typescript-eslint/camelcase": "off",
+            "camelcase": "off",
+            "no-useless-constructor": "off",
+            "@typescript-eslint/no-useless-constructor": 0,
+            "@typescript-eslint/no-unused-vars": [
+                "off"
+            ],
+            "no-unused-vars": 0,
+            "no-delete-var": 2,
+            "no-empty-character-class": 2,
+            "no-extra-semi": 2,
+            "no-invalid-regexp": 2,
+            "no-irregular-whitespace": 2,
+            "no-multiple-empty-lines": [
+                1,
+                {
+                    "max": 2
+                }
+            ],
+            "no-return-assign": 1,
+            "no-trailing-spaces": 1,
+            "no-var": 0,
+            "array-bracket-spacing": [
+                2,
+                "never"
+            ],
+            "no-script-url": 0,
+            "default-case": 0,
+            "eqeqeq": 2,
+            "key-spacing": [
+                2,
+                {
+                    "beforeColon": false,
+                    "afterColon": true
+                }
+            ],
+            "use-isnan": 2,
+            "react-hooks/rules-of-hooks": "off",
+            "": "off"
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.3.1",
+        "@typescript-eslint/eslint-plugin": "^5.20.0",
+        "@typescript-eslint/parser": "^5.20.0",
+        "eslint": "^8.13.0",
+        "eslint-config-alloy": "^4.5.1",
+        "eslint-plugin-react": "^7.29.4",
+        "node-sass": "^7.0.1",
+        "prettier": "^2.6.2",
+        "sass-loader": "^12.6.0"
+    }
 }
