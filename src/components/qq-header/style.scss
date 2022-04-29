@@ -1,0 +1,37 @@
+@import '../../styles/mixin.scss';
+.header {
+    position: relative;
+    width: 100%;
+    border: 2px solid black;
+    @include border-radius(10px);
+    height: 100%;
+    padding: 2px 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    &-left {
+        position: relative;
+        @include transform-center(0%, 50%);
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #DDD;
+        }
+    }
+    &-right {
+        position: relative;
+        margin-left: 10px;
+        @include transform-center(0%, 50%);
+        .nick-name {
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
+        }
+        .qq-num {
+            font-size: 18px;
+            color: #666;
+            margin-top: 2px;
+        }
+    }
+}
